@@ -27,6 +27,7 @@
 .profile__discription {
   margin: 0;
   font-size: 16px;
+  line-height: 16px;
   text-align: left;
 }
 
@@ -56,4 +57,39 @@
   padding: 18px 32px 18px 32px;
   border-radius: 8px;
   font-weight: 500;
+}
+@media screen and (max-width: 627px) {
+  .profile {
+    flex-direction: column;
+    max-width: 288px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .profile__avatar {
+    margin-right: 0;
+    height: 80px;
+    width: 80px;
+    margin: 0 0 12px;
+  }
+  .profile__add-btn {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .profile__edit-btn {
+    text-align: center;
+  }
+  .profile__name {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 6px;
+  }
+  .profile__column {
+    margin: 0 0 20px;
+  }
+  .profile__discription {
+    margin: 0 0 32px;
+    text-align: center;
+  }
 }
