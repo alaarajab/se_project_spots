@@ -28,8 +28,9 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  max-width: 420px;
 }
-.profile__discription {
+.profile__description {
   margin: 0;
   font-size: 16px;
   line-height: 16px;
@@ -39,6 +40,7 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  max-width: 420px;
 }
 
 .profile__edit-btn {
@@ -94,6 +96,7 @@
     font-size: 20px;
     line-height: 20px;
     margin: 0 0 6px;
+    max-width: 288px;
   }
   .profile__column {
     margin: 0 0 20px;
@@ -101,5 +104,6 @@
   .profile__discription {
     margin: 0 0 32px;
     text-align: center;
+    max-width: 288px;
   }
 }
