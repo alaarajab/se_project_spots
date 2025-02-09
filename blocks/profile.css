@@ -102,12 +102,21 @@
     margin: 0 auto;
 
     text-align: center;
-
+    cursor: pointer;
+    opacity: 100%;
     width: 288px;
     height: 52px;
   }
+  .profile__add-btn:hover {
+    opacity: 80%;
+  }
   .profile__edit-btn {
     text-align: center;
+    cursor: pointer;
+    opacity: 40%;
+  }
+  .profile__edit-btn:hover {
+    opacity: 100%;
   }
   .profile__name {
     font-size: 20px;
