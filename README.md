@@ -19,6 +19,9 @@
 - CSS
 - Responsive Design
 
+### Images
+![Image](src/Img/1-photo-by-moritz-feldmann-from-pexels.jpg)
+
 **Deployment**
 
 - This webpage is deploye to GitHub Pages.
