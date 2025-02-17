@@ -41,7 +41,10 @@ const editModalDescriptionInput = editProfileModal.querySelector(
 );
 //card related elements
 const cardModal = document.querySelector("#add-card-modal");
+const cardForm = cardModal.querySelector(".modal__form");
 const cardModalCloseButton = cardModal.querySelector(".modal__close-btn");
+const cardNameInput = cardModal.querySelector("#add-card-name-input");
+const cardLinkInput = cardModal.querySelector("#add-card-link-input");
 
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
@@ -53,10 +56,21 @@ function getCardElement(data) {
 
   const cardNameEl = cardElement.querySelector(".card__title");
   const cardImageEl = cardElement.querySelector(".card__image");
+  //select the element
+  const cardLikeBtn = cardElement.querySelector(".card__like-btn");
+  const cardDeleteBtn = cardElement.querySelector(".card__delete-btn");
 
   cardNameEl.textContent = data.name;
   cardImageEl.src = data.link;
   cardImageEl.alt = data.name;
+  //add the event listener
+  cardLikeBtn.addEventListener("click", () => {
+    //write code that handel the event
+    cardLikeBtn.classList.toggle("card__like-btn_liked");
+  });
+  cardDeleteBtn.addEventListener("click", (e) => {
+    e.target.closest(".card").remove();
+  });
 
   return cardElement;
 }
@@ -73,6 +87,14 @@ function handleEditFormSubmit(e) {
   profileDescription.textContent = editModalDescriptionInput.value;
   closeModal(editProfileModal);
 }
+function handleAddCardSubmit(e) {
+  e.preventDefault();
+  const inputValues = { name: cardNameInput.value, link: cardLinkInput.value };
+  const cardEl = getCardElement(inputValues);
+  cardsList.prepend(cardEl);
+  closeModal(cardModal);
+}
+
 profileEditButton.addEventListener("click", () => {
   editModalNameInput.value = profileName.textContent;
   editModalDescriptionInput.value = profileDescription.textContent;
@@ -91,6 +113,7 @@ cardModalCloseButton.addEventListener("click", () => {
   closeModal(cardModal);
 });
 editFormElement.addEventListener("submit", handleEditFormSubmit);
+cardForm.addEventListener("submit", handleAddCardSubmit);
 
 //for (let i = 0; i < initialCards.length; i++) {
 // const cardElement = getCardElement(initialCards[i]);

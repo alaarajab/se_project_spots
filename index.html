@@ -35,9 +35,23 @@
         </section>
         <section class="cards page__section">
           <ul class="cards__list">
-            <template id="card-template">
+            <!-- <template id="card-template">
               <li class="card">
                 <img src="" alt="" class="card__image" />
+                <div class="card__content">
+                  <h2 class="card__title"></h2>
+                  <button type="button" class="card__like-btn"></button>
+                </div>
+              </li>
+            </template>
+          -->
+
+            <template id="card-template">
+              <li class="card">
+                <div class="card__image-wrapper">
+                  <img src="" alt="" class="card__image" />
+                  <button type="button" class="card__delete-btn"></button>
+                </div>
                 <div class="card__content">
                   <h2 class="card__title"></h2>
                   <button type="button" class="card__like-btn"></button>
