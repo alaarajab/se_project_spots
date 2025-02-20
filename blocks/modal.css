@@ -50,12 +50,14 @@
   color: #fff;
   background: #212121;
   box-sizing: border-box;
-  width: 100%; /* Matches the image width */
+  /*width: 100%; /* Matches the image width */
   max-width: 80vw; /* Same max-width as the image */
   border-radius: 8px;
   padding: 4px 8px;
   margin-top: 8px;
   text-align: left;
+  width: auto; /* Fits exactly to the text */
+  display: inline-block; /* Shrinks to fit content */
 }
 
 .modal__close {
