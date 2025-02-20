@@ -1,3 +1,6 @@
+.card__image-wrapper {
+  cursor: pointer;
+}
 .card__image {
   height: 413px;
   width: 100%;

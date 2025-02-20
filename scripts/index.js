@@ -42,6 +42,9 @@ const editModalDescriptionInput = editProfileModal.querySelector(
 const previewModal = document.querySelector("#preview-modal");
 const previewModelImageEl = previewModal.querySelector(".modal__image");
 const previewModelIcaptionEl = previewModal.querySelector(".modal__caption");
+const previewModelCloseButton = previewModal.querySelector(
+  ".modal__close_type_preview"
+);
 //card related elements
 const cardModal = document.querySelector("#add-card-modal");
 const cardForm = cardModal.querySelector(".modal__form");
@@ -79,6 +82,9 @@ function getCardElement(data) {
     previewModelImageEl.src = data.link;
     previewModelImageEl.alt = data.name;
     previewModelIcaptionEl.textContent = data.name;
+  });
+  previewModelCloseButton.addEventListener("click", () => {
+    closeModal(previewModal);
   });
 
   return cardElement;
