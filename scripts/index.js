@@ -78,8 +78,8 @@ function getCardElement(data) {
     //write code that handel the event
     cardLikeBtn.classList.toggle("card__like-btn_liked");
   });
-  cardDeleteBtn.addEventListener("click", (e) => {
-    e.target.closest(".card").remove();
+  cardDeleteBtn.addEventListener("click", () => {
+    cardElement.remove();
   });
   cardImageEl.addEventListener("click", () => {
     openModal(previewModal);
@@ -87,12 +87,12 @@ function getCardElement(data) {
     previewModelImageEl.alt = data.name;
     previewModelIcaptionEl.textContent = data.name;
   });
-  previewModelCloseButton.addEventListener("click", () => {
-    closeModal(previewModal);
-  });
 
   return cardElement;
 }
+previewModelCloseButton.addEventListener("click", () => {
+  closeModal(previewModal);
+});
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
@@ -106,11 +106,20 @@ function handleEditFormSubmit(e) {
   profileDescription.textContent = editModalDescriptionInput.value;
   closeModal(editProfileModal);
 }
+/*function handleAddCardSubmit(e) {
+  e.preventDefault();
+  const inputValues = { name: cardNameInput.value, link: cardLinkInput.value };
+  const cardEl = getCardElement(inputValues);
+  cardsList.prepend(cardEl);
+  closeModal(cardModal);
+}*/
 function handleAddCardSubmit(e) {
   e.preventDefault();
   const inputValues = { name: cardNameInput.value, link: cardLinkInput.value };
   const cardEl = getCardElement(inputValues);
   cardsList.prepend(cardEl);
+  cardNameInput.value = ""; // Clear name input
+  cardLinkInput.value = ""; // Clear link input
   closeModal(cardModal);
 }
 
