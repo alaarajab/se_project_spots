@@ -24,14 +24,14 @@
   max-width: 730px;
   width: 100%;
   box-sizing: border-box;
-  /*position: relative;*/
+  position: relative;
   border-radius: 20px;
 }
 .modal__container_type_preview {
   background-color: transparent;
   padding: 0;
   border-radius: 20px;
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Aligns items to the left */
@@ -45,7 +45,7 @@
   max-height: 80vh;
   object-fit: contain;
   border-radius: 20px;
-  position: relative;
+  /* position: relative;*/
   margin: 0 auto;
 }
 
@@ -88,7 +88,7 @@
   opacity: 1;
   cursor: pointer;
   position: absolute;
-  z-index: 10;
+  z-index: 1;
 }
 .modal__close_type_preview:hover {
   background-image: url(../images/close-modal-preview_gray.png);
@@ -160,7 +160,6 @@
   }
   .modal__close_type_preview {
     top: 41px;
-    left: 248px;
-    right: 0;
+    left: 300px;
   }
 }

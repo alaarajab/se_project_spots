@@ -41,7 +41,7 @@
   opacity: 100%;
 }
 .card__like-btn_liked {
-  background-image: url(../images/like-image-liked.svg);
+  background-image: url(../images/like-image.svg);
   opacity: 100%;
   background-repeat: no-repeat;
   background-size: contain;
