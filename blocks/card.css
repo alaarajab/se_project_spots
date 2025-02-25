@@ -8,6 +8,7 @@
   border-radius: 8px;
   display: block;
   margin-bottom: 12px;
+  position: relative;
 }
 .card__title {
   font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -33,6 +34,8 @@
   background-color: transparent;
   opacity: 40%;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .card__like-btn:hover {
   opacity: 100%;
@@ -40,6 +43,10 @@
 .card__like-btn_liked {
   background-image: url(../images/like-image-liked.svg);
   opacity: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent; /* Ensures no white background */
+  border: none;
 }
 .card__like-btn_liked:hover {
   background-image: url(../images/like-image-liked-hover.svg);
@@ -73,5 +80,8 @@
     font-size: 16px;
     line-height: 16px;
     max-width: 250px;
+  }
+  .card__delete-btn {
+    left: 246px;
   }
 }
