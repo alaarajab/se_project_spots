@@ -27,7 +27,7 @@
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  border-radius: 20px;
+  border-radius: 8px;
 }
 /* .modal__container_type_preview {
   background-color: transparent;
@@ -50,7 +50,7 @@
   max-width: 80vw;
   max-height: 80vh;
   object-fit: contain;
-  border-radius: 20px;
+  border-radius: 8px;
   /* position: relative; */
   margin: 0 auto;
 }
@@ -168,5 +168,9 @@
   .modal__close_type_preview {
     top: -48px;
     right: 0;
+  }
+  .modal__image {
+    border-radius: 4px;
+    width: 100%;
   }
 }
