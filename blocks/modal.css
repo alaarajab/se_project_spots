@@ -13,7 +13,7 @@
   padding: 0 16px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
-  transition: visibility 0.3s, opacity 0.3sease-in;
+  transition: visibility 0.3s, opacity 0.3s ease-in;
   opacity: 0;
 }
 .modal_opened {
