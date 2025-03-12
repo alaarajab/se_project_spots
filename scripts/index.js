@@ -98,9 +98,13 @@ previewModelCloseButton.addEventListener("click", () => {
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
+  modal.addEventListener("mousedown", closeModalOnOverlayClick);
+  document.addEventListener("keydown", closeModalOnEscape);
 }
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
+  modal.removeEventListener("mousedown", closeModalOnOverlayClick);
+  document.removeEventListener("keydown", closeModalOnEscape);
 }
 function handleEditFormSubmit(e) {
   e.preventDefault();
@@ -164,3 +168,16 @@ initialCards.forEach((item) => {
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
 });
+function closeModalOnOverlayClick(e) {
+  if (e.target.classList.contains("modal_opened")) {
+    closeModal(e.target);
+  }
+}
+function closeModalOnEscape(e) {
+  if (e.key === "Escape") {
+    const openedModal = document.querySelector(".modal_opened");
+    if (openedModal) {
+      closeModal(openedModal);
+    }
+  }
+}
