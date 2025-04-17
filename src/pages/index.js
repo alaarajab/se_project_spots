@@ -17,6 +17,44 @@ import {
   resetValidation,
   disableButton,
 } from "../scripts/validation.js";
+
+/*import thorensImage from "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/1-photo-by-moritz-feldmann-from-pexels.jpg";
+import terraceImage from "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/2-photo-by-ceiline-from-pexels.jpg";
+import cafeImage from "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/3-photo-by-tubanur-dogan-from-pexels.jpg";
+import bridgeImage from "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/4-photo-by-maurice-laschet-from-pexels.jpg";
+import tunnelImage from "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/5-photo-by-van-anh-nguyen-from-pexels.jpg";
+import mountainImage from "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/6-photo-by-moritz-feldmann-from-pexels.jpg";
+import gateImage from "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg";
+const initialCards = [
+  {
+    name: "Val Thorens",
+    link: thorensImage,
+  },
+  {
+    name: "Restaurant terrace",
+    link: terraceImage,
+  },
+  {
+    name: "An outdoor cafe",
+    link: cafeImage,
+  },
+  {
+    name: "A very long bridge, over the forest and through the trees",
+    link: bridgeImage,
+  },
+  {
+    name: "Tunnel with morning light",
+    link: tunnelImage,
+  },
+  {
+    name: "Mountain house",
+    link: mountainImage,
+  },
+  {
+    name: "Golden Gate bridge",
+    link: gateImage,
+  },
+];*/
 const initialCards = [
   {
     name: "Val Thorens",
@@ -44,7 +82,7 @@ const initialCards = [
   },
   {
     name: "Golden Gate bridge",
-    link: " https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg",
   },
 ];
 //profile elements
