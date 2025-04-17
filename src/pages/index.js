@@ -1,3 +1,22 @@
+import "./index.css";
+import logoSrc from "../images/logo.svg";
+const logoImage = document.getElementById("image-logo");
+logoImage.src = logoSrc;
+import avaterSrc from "../images/avatar.jpg";
+const avatarImage = document.getElementById("image-avatar");
+avatarImage.src = avaterSrc;
+import pencilSrc from "../images/pencil.svg";
+const pencilImage = document.getElementById("image-pencil");
+pencilImage.src = pencilSrc;
+import plusSrc from "../images/plus.svg";
+const plusImage = document.getElementById("image-plus");
+plusImage.src = plusSrc;
+import {
+  enableValidation,
+  validationConfig,
+  resetValidation,
+  disableButton,
+} from "../scripts/validation.js";
 const initialCards = [
   {
     name: "Val Thorens",
@@ -128,7 +147,7 @@ function handleAddCardSubmit(e) {
   cardNameInput.value = ""; // Clear name input
   cardLinkInput.value = ""; // Clear link input
   /*e.target.rest();*/
-  disableButton(cardSubmitBtn, settings);
+  disableButton(cardSubmitBtn, validationConfig);
   closeModal(cardModal);
 }
 
@@ -139,7 +158,7 @@ profileEditButton.addEventListener("click", () => {
     editModalNameInput,
     editModalDescriptionInput,
   ]);*/
-  resetValidation(editFormElement, settings);
+  resetValidation(editFormElement, validationConfig);
   openModal(editProfileModal);
 });
 editModalCloseBtn.addEventListener("click", () => {
@@ -150,7 +169,7 @@ cardModalButton.addEventListener("click", () => {
   //editModalNameInput.value = profileName.textContent;
   //editModalDescriptionInput.value = profileDescription.textContent;
   /* resetValidation(cardForm, [cardNameInput, cardLinkInput]);*/
-  resetValidation(cardForm, settings);
+  resetValidation(cardForm, validationConfig);
 
   openModal(cardModal);
 });
@@ -168,6 +187,8 @@ initialCards.forEach((item) => {
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
 });
+enableValidation(validationConfig);
+
 function closeModalOnOverlayClick(e) {
   if (e.target.classList.contains("modal_opened")) {
     closeModal(e.target);
