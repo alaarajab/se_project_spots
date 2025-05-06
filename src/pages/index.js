@@ -17,6 +17,7 @@ import {
   resetValidation,
   disableButton,
 } from "../scripts/validation.js";
+import Api from "../scripts/Api.js";
 
 /*import thorensImage from "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/1-photo-by-moritz-feldmann-from-pexels.jpg";
 import terraceImage from "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/2-photo-by-ceiline-from-pexels.jpg";
@@ -85,6 +86,16 @@ const initialCards = [
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg",
   },
 ];
+const api = new Api({
+  baseUrl: "https://around-api.en.tripleten-services.com/v1",
+  headers: {
+    authorization: "e3c0228b-2422-4a4f-96fe-9e9c799fd017",
+    "Content-Type": "application/json",
+  },
+});
+api.getInitialCards().then((cards) => {
+  console.log(cards);
+});
 //profile elements
 const profileEditButton = document.querySelector(".profile__edit-btn");
 const cardModalButton = document.querySelector(".profile__add-btn");
