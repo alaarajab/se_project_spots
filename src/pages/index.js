@@ -142,8 +142,12 @@ function getCardElement(data) {
   cardImageEl.src = data.link;
   cardImageEl.alt = data.name;
 
+  if (data.isLiked === true) {
+    cardLikeBtn.classList.add("card__like-btn_liked");
+  }
+
   cardLikeBtn.addEventListener("click", (e) => {
-    /*const isLiked = cardLikeBtn.classList.contains("card__like-btn_liked");*/
+    /**/
     handelLike(e, data._id);
   });
 
