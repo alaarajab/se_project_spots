@@ -253,12 +253,6 @@ cancelBtn.addEventListener("click", () => {
   closeModal(deleteModal);
 });
 
-deletingBtn.addEventListener("click", () => {
-  // closeModal(deleteModal);
-  //openModal(deleteModal);
-  //cardElement.remove();
-});
-
 deletModalCloseButton.addEventListener("click", () => {
   closeModal(deleteModal);
 });
