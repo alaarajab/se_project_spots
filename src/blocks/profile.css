@@ -87,6 +87,7 @@
   position: relative;
   margin-right: 20px;
 }
+
 .profile__avatar-btn {
   position: absolute;
   width: 100%;
@@ -98,9 +99,11 @@
   border-radius: 8px;
   border: none;
   background-color: rgba(164, 164, 164, 0.5);
+  color: #fff;
 }
 .profile__avatar-container:hover .profile__avatar-btn {
   visibility: visible;
+  cursor: pointer;
 }
 .profile__avatar-btn::after {
   content: " Edit avatar";

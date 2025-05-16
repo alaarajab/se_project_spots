@@ -48,8 +48,8 @@ class Api {
       body: JSON.stringify({ name, link }),
     }).then(this._handleResponse);
   }
-  deleteCard(Id) {
-    return fetch(`${this._baseUrl}/cards/${Id}`, {
+  deleteCard(id) {
+    return fetch(`${this._baseUrl}/cards/${id}`, {
       method: "DELETE",
       headers: this._headers,
     }).then(this._handleResponse);
