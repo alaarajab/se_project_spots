@@ -1,15 +1,7 @@
-# Project 3: Spots
 
-### Overview
+🟣 Spots
 
-- Description
-- Tech Stack
-- Deployment
-
-**Description**
-
-- This project is made so all the elements are displayed correctly on popular screen sizes. It is images sharing site.
-- An interactive social media web application where users can add and remove photos, like photos of other users, and make a few minor adjustments to their profile.
+An interactive social media web application where users can add and remove photos, like others’ photos, and update their profile information. The project emphasizes responsive design, API integration, and clean modular code architecture.
 - [Link to the project on Figm](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
 - [Link to my project video on YouTube](https://www.youtube.com/watch?v=AL69avzPpgM)
 
