@@ -43,7 +43,7 @@ Users can:
 
 **Images**
 
-![Image](https://github.com/user-attachments/assets/71eafb0c-5023-44e1-9e49-88d9ed97cd17)
+![Image](https://github.com/alaarajab/se_project_spots/blob/74caae05eb517a1ae5daf747125f6e5c73261b32/Screenshot_10-10-2025_125557_localhost.jpeg)
 
 ![Image](https://github.com/user-attachments/assets/f6c82f02-de36-413a-8342-3400f267edf1)
 
