@@ -28,14 +28,14 @@ Users can:
 
 **⚙️ Tech Stack**
 
-Frontend: HTML, CSS, JavaScript (ES6+), Responsive Design
-Architecture: JavaScript Modules, Webpack
-API & Backend: RESTful API, Token-based Authentication
-Tools: Git, GitHub, Figma
+-Frontend: HTML, CSS, JavaScript (ES6+), Responsive Design
+-Architecture: JavaScript Modules, Webpack
+-API & Backend: RESTful API, Token-based Authentication
+-Tools: Git, GitHub, Figma
 
 **🧩 Key Features**
 
-Responsive Design: Works seamlessly on all major screen sizes.
+- Responsive Design: Works seamlessly on all major screen sizes.
 
 Dynamic Card System: Add, delete, and like photos in real time.
 
